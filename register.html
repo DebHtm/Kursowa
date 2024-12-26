@@ -1,0 +1,36 @@
+<!-- templates/register.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Реєстрація</h1>
+      <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <div>
+          {{ form.username.label }}<br />
+          {{ form.username(size=32) }}<br />
+        </div>
+        <div>
+          {{ form.email.label }}<br />
+          {{ form.email(size=32) }}<br />
+        </div>
+        <div>
+          {{ form.password.label }}<br />
+          {{ form.password(size=32) }}<br />
+        </div>
+        <div>{{ form.submit() }}</div>
+      </form>
+      <p>
+        Вже маєте обліковий запис? <a href="{{ url_for('login') }}">Увійти</a>
+      </p>
+    </div>
+  </body>
+</html>

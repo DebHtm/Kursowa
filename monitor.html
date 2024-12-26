@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Monitor</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Monitor Websites</h1>
+    <form method="POST">
+      {{ form.hidden_tag() }} {{ form.url.label }} {{ form.url() }} {{
+      form.submit() }}
+    </form>
+    <table>
+      <tr>
+        <th>Website</th>
+        <th>Status</th>
+        <th>Last Checked</th>
+      </tr>
+      {% for website in websites %}
+      <tr>
+        <td>{{ website.url }}</td>
+        <td>{{ website.status }}</td>
+        <td>{{ website.last_checked }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

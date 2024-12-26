@@ -1,0 +1,33 @@
+<!-- templates/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Вхід</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Вхід</h1>
+      <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <div>
+          {{ form.email.label }}<br />
+          {{ form.email(size=32) }}<br />
+        </div>
+        <div>
+          {{ form.password.label }}<br />
+          {{ form.password(size=32) }}<br />
+        </div>
+        <div>{{ form.submit() }}</div>
+      </form>
+      <p>
+        Ще не маєте облікового запису?
+        <a href="{{ url_for('register') }}">Зареєструватися</a>
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+/* Загальні стилі сторінки */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Контейнер для основної форми або таблиці */
+.container {
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 600px; /* Збільшили ширину для таблиці */
+  text-align: center;
+}
+
+/* Заголовок */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Стилі форми */
+form div {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Кнопка для додавання сайту */
+input[type='submit'],
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input[type='submit']:hover,
+button:hover {
+  background-color: #45a049;
+}
+
+/* Стилі для таблиці моніторингу сайтів */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+/* Додаткові стилі для посилань */
+p {
+  margin-top: 15px;
+  color: #555;
+}
+
+a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
