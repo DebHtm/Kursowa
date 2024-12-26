@@ -1,4 +1,4 @@
-/* Загальні стилі сторінки */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f7f7f7;
@@ -9,24 +9,21 @@ body {
   margin: 0;
 }
 
-/* Контейнер для основної форми або таблиці */
 .container {
   background-color: #fff;
   padding: 20px 40px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 600px; /* Збільшили ширину для таблиці */
+  width: 600px;
   text-align: center;
 }
 
-/* Заголовок */
 h1 {
   font-size: 24px;
   margin-bottom: 20px;
   color: #333;
 }
 
-/* Стилі форми */
 form div {
   margin-bottom: 15px;
   text-align: left;
@@ -42,7 +39,6 @@ input[type='password'] {
   border-radius: 4px;
 }
 
-/* Кнопка для додавання сайту */
 input[type='submit'],
 button {
   width: 100%;
@@ -60,7 +56,6 @@ button:hover {
   background-color: #45a049;
 }
 
-/* Стилі для таблиці моніторингу сайтів */
 table {
   width: 100%;
   border-collapse: collapse;
